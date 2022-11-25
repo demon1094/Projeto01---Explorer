@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --grey: #7D7987;
+  --orange: #FF9900;
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.text {
+  color: var(--grey);
+}
+
+.strong-text {
+  font-weight: 700;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 10rem;
+}
+
+main .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+main .texts h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+main .texts h1 span {
+  font-weight: 700;
+}
+
+main .texts .text {
+  line-height: 2.2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-top: 1px solid #ECEFF2;
+}
+
+footer .balls-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer .balls-img {
+    display: none;
+  }
+  main {
+    margin-bottom: 10%;
+  } 
+}
